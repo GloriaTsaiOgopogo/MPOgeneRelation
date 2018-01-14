@@ -1,3 +1,5 @@
+## By Qingqing Cai 17110700093  
+
 setwd("your directory")
 
 # memory.size(F)
