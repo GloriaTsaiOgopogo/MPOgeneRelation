@@ -1,3 +1,5 @@
+## By Qingqing Cai 17110700093  
+
 library(plyr)
 
 setwd("D:/fudan/#Omics/FinalProject/test3/run/")
