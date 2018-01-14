@@ -1,3 +1,5 @@
+## By Qingqing Cai 17110700093  
+
 ## For data arranging and data combination of string, go, MPO dericed gene-gene distance data #### 
 
 setwd("your directory")
