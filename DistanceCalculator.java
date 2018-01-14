@@ -24,7 +24,7 @@ public class DistanceCalculator2 {
 		Date end = new Date();
 		System.out.println("End Time: " + end);
 	}
-	
+	// By Qingqing Cai 17110700093  
 	public static void distanceMatrix(String bootFilePath, String filename, double maxDistance) throws Exception{
 		BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(bootFilePath + filename )));
 		PrintWriter wr = new PrintWriter(new BufferedWriter(new FileWriter(bootFilePath + "MPO_dist_table.txt")));
