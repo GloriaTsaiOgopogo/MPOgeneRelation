@@ -1,3 +1,5 @@
+## By Qingqing Cai 17110700093  
+
 library(igraph)
 
 setwd("your directory")
