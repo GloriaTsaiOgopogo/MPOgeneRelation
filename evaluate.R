@@ -2,9 +2,9 @@
 
 library(plyr)
 
-setwd("D:/fudan/#Omics/FinalProject/test3/run/")
+setwd("your dir")
 
-results <- read.table("loocal_test_2.txt", header = F, sep ="\t")
+results <- read.table("resuls.txt", header = F, sep ="\t")
 
 names(results) <- c("MPO", "gene", "distance", "confident")
 
@@ -24,7 +24,7 @@ results$tag <- paste(results$MPO, results$gene, sep = "-")
 
 top_n <- 1  ### 取預測距離最小的top_n個數據
 
-rm(predicted)
+#rm(predicted)
 
 predicted <- ddply(results, 'gene', function(x){if(nrow(x) > top_n) {x <- x[1:top_n,]} else {x <- x}})
 
@@ -32,6 +32,6 @@ dim(predicted)
 
 acu <- merge(real_data, predicted, by = "tag")
 
-acu_score <- paste(round(length(acu)/length(unique(results$gene)), 5)*100, "%", sep = "")
+acu_score <- paste(round(dim(acu)[1]/length(unique(results$gene)), 5)*100, "%", sep = "")
 
 acu_score
